@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/intent2view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <!--
+          <ImageView
+        android:id="@+id/imgcode"
+        android:layout_width="320dp"
+        android:layout_height="194dp" />
+    -->
+
+    <!--<EditText
+        android:id="@+id/scan_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_bigin_scan"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>-->
+    
+    <EditText
+        android:id="@+id/scan_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/intent2view"
+        android:layout_below="@+id/textView1"        android:gravity="top" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_bigin_scan"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="开始扫描" 
+         android:background="@drawable/login_button_selector"/>
+
+    <Button
+        android:id="@+id/intent2view"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/login_button_selector"
+        android:onClick="checkResult"
+        android:text="进入网页" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bt_bigin_scan"
+        android:text="二维码信息："
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/login_button_selector"
+        android:text="返回" />
+
+</RelativeLayout>
