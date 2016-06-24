@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/header_shop" />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+        
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="70dp"
+			android:layout_alignParentLeft="true">
+            
+            <Button
+                android:id="@+id/btn_campus_news"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="#FF1493"/>
+            
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="77dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lines="2"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="生成二维码"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+            
+        </FrameLayout>
+        
+        <FrameLayout
+            android:layout_width="75dp"
+            android:layout_height="70dp" 
+            android:layout_centerInParent="true" >
+            
+            <Button
+                android:id="@+id/btn_wsq_tocao"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="#48D1CC"/>
+            
+            <TextView 
+                android:layout_width="68dp"
+                android:layout_height="77dp"
+                android:text="扫描二维码"
+                android:marqueeRepeatLimit="marquee_forever"
+		        android:lines="2"
+		        android:textColor="#FFFFFF"
+		        android:textSize="17sp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            
+            
+        </FrameLayout>
+        
+        
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+      
+
+       
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFF8833" />
+
+        <EditText
+            android:id="@+id/et_award_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint=""
+            android:lines="1" />
+
+       
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1.5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:background="#FFFF8833" />
+
+        <EditText
+            android:id="@+id/et_award_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint=""
+            android:lines="1" />
+    </LinearLayout>
+
+</LinearLayout>
